@@ -1,5 +1,7 @@
 # Work-Scheduler
 
+Link to deployed website: https://minnieakuma199.github.io/Work-Scheduler/
+
 ## User Story
 
 ```md

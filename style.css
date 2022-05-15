@@ -1,10 +1,10 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family:'Macondo', cursive;
   font-size: 16px;
   line-height: 1;
-  
+  background-color: lightgoldenrodyellow;
 }
-
+/* is this being used? */
 textarea {
   background: transparent;
   border: none;
@@ -19,7 +19,7 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid paleturquoise;
+  border-bottom: 10px solid lightskyblue;
 }
 
 .description {
