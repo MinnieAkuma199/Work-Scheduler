@@ -2,6 +2,8 @@
 
 Link to deployed website: https://minnieakuma199.github.io/Work-Scheduler/
 
+![alt text](./Screen%20Shot%202022-05-14%20at%2010.52.31%20PM.png)
+
 ## User Story
 
 ```md
