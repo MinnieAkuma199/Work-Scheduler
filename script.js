@@ -1,13 +1,103 @@
 //using moment.js
 var moment = moment();
-var btn = document.querySelector("#mybutton");
+var hours = moment.format("h")
+// console.log(typeof hours)
 
-$("#currentDay").text(moment.format("MMMM Do, YYYY"));
+var nineAM = $("#ec1")
+var tenAM = $("#ec2");
+var elevenAM = $("#ec3");
+var noon = $("#ec4");
+var onePM = $("#ec5");
+var twoPM = $("#ec6");
+var threePM = $("#ec7");
+var fourPM = $("#ec8");
+var fivePM = $("#ec9");
+console.log(nineAM)
+// var btn = document.querySelector("#mybutton");
 
-//save input text in local storeage when button is clicked, done for each button bc input is different. 
+//using moment.js to input current day on top of page
+//function displayTime(){
+$("#currentDay").text(moment.format("MMMM Do, YYYY, h:mm:ss a"));
+//}
+
+if (hours === "9") {
+  nineAM.addClass("present")
+}
+if (hours > "9") {
+  nineAM.addClass("past")
+}
+else {
+  nineAM.addClass("future")
+}
+if (hours === "10") {
+  tenAM.addClass("present");
+}
+if (hours > "10") {
+  tenAM.addClass("past");
+} else {
+  tenAM.addClass("future");
+}
+if (hours === "11") {
+  elevenAM.addClass("present");
+}
+if (hours > "11") {
+  elevenAM.addClass("past");
+} else {
+  elevenAM.addClass("future");
+}
+if (hours === "12") {
+  noon.addClass("present");
+}
+if (hours > "12") {
+  noon.addClass("past");
+} else {
+  noon.addClass("future");
+}
+if (hours === "1") {
+  onePM.addClass("present");
+}
+if (hours > "1") {
+  onePM.addClass("past");
+} else {
+  onePM.addClass("future");
+}
+if (hours === "2") {
+  twoPM.addClass("present");
+}
+if (hours > "2") {
+  twoPM.addClass("past");
+} else {
+  twoPM.addClass("future");
+}
+if (hours === "3") {
+  threePM.addClass("present");
+}
+if (hours > "3") {
+  threePM.addClass("past");
+} else {
+  threePM.addClass("future");
+}
+if (hours === "4") {
+  fourPM.addClass("present");
+}
+if (hours > "4") {
+  fourPM.addClass("past");
+} else {
+  fourPM.addClass("future");
+}
+if (hours === "5") {
+  fivePM.addClass("present");
+}
+if (hours > "5") {
+  fivePM.addClass("past");
+} else {
+  fivePM.addClass("future");
+}
+
+//save input text in local storeage when button is clicked, done for each button bc input is different so need a different key for each input to be stored properly. 
 $("#button1").click(function (event) {
     event.preventDefault();
-    var text = document.querySelector("#input1").value;
+    var text = $("#input1").val();
     localStorage.setItem("9am", text);
 });
 $("#button2").click(function (event) {
@@ -53,8 +143,7 @@ $("#button9").click(function (event) {
  
 
 
-
-//SAVING IN LOCAL STOREAGE 
+//example of the saved notice shown from ollyu
 
 // $("#input-01").val(localStorage.getItem("hour-01"))//do this for each input 
 // function showNotice() {
