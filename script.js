@@ -102,42 +102,42 @@ $("#button1").click(function (event) {
 });
 $("#button2").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input2").value;
+  var text = $("#input2").val();
   localStorage.setItem("10am", text);
 });
 $("#button3").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input3").value;
+  var text = $("#input3").val();
   localStorage.setItem("11am", text);
 });
 $("#button4").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input4").value;
+  var text = $("#input4").val();
   localStorage.setItem("Noon", text);
 });
 $("#button5").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input5").value;
+  var text = $("#input5").val();
   localStorage.setItem("1pm", text);
 });
 $("#button6").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input6").value;
+  var text = $("#input6").val();
   localStorage.setItem("2pm", text);
 });
 $("#button7").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input7").value;
+  var text = $("#input7").val();
   localStorage.setItem("3pm", text);
 });
 $("#button8").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input8").value;
+  var text = $("#input8").val();
   localStorage.setItem("4pm", text);
 });
 $("#button9").click(function (event) {
   event.preventDefault();
-  var text = document.querySelector("#input9").value;
+  var text = $("#input9").val();
   localStorage.setItem("5pm", text);
 });
  
