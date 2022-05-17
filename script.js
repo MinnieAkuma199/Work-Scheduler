@@ -143,22 +143,6 @@ $("#button9").click(function (event) {
  
 
 
-//example of the saved notice shown from ollyu
-
-// $("#input-01").val(localStorage.getItem("hour-01"))//do this for each input 
-// function showNotice() {
-//     $(".save-notice").show()
-//     setTimeout(function () {
-//         $(#savenotice).hide()
-//     }, 1000);
-// }
-//id for every button id for every input 
-// $("#button-01").click(function () {
-//     var inputVal = $(this).siblings('input'.val());
-//     console.log(inputVal);
-//     localStorage.setItem("hour-01", inputVal)
-   // showNotice();
-// })
 
 
 
